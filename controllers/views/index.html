@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="row vh-100 g-0">
+      <!-- Left side -->
+      <div class="col-lg-6 position-realtive d-none d-lg-block">
+        <div
+          class="bg-holder"
+          style="background-image: url(images/bg7.jpg)"
+        ></div>
+      </div>
+      <!-- /Left side -->
+
+      <!-- /Right side -->
+
+      <div class="col-lg-6">
+        <div
+          class="row align-items-center justify-content-center h-100 g-0 px-4 ps-sm-0"
+        >
+          <div class="col col-sm-6 col-lg-7 col-xl-6">
+            <!-- logo -->
+            <a href="a" class="d-flex justify-content-center mb-4">
+              <!-- <img src="images/logo.png" alt="" width="60" /> -->
+            </a>
+            <!-- /logo -->
+
+            <div class="text-center mb-5">
+              <h3 class="fw-bold">Log In</h3>
+              <p class="text-secondary">Get access to your account</p>
+            </div>
+            <!-- Social Login -->
+            <button
+              class="btn btn-lg btn-outline-secondary btn-outline-custom w-100 mb-3"
+            >
+              <i class="bx bxl-google text-danger me-1 fs-6"></i>
+              Login With Google
+            </button>
+            <button
+              class="btn btn-lg btn-outline-secondary btn-outline-custom w-100"
+            >
+              <i class="bx bxl-facebook text-primary me-1 fs-6"></i>
+              Login With Facebook
+            </button>
+            <!-- /Social Login -->
+
+            <!-- Divider -->
+            <div class="position-relative">
+              <hr class="text-secondary divider" />
+              <div class="divider-content-center">or</div>
+            </div>
+            <!-- /Divider -->
+
+            <!-- form -->
+            <form action="/login" method="post">
+              <div class="input-group mb-3">
+                <span class="input-group-text">
+                  <i class="bx bx-envelope"></i>
+                </span>
+                <!-- <label for="">Email</label> -->
+                <input
+                  type="text"
+                  class="form-control form-control-lg fs-6"
+                  placeholder="Email"
+                  name="email"
+                />
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">
+                  <i class="bx bx-lock-alt"></i>
+                </span>
+                <input
+                  type="password"
+                  class="form-control form-control-lg fs-6"
+                  placeholder="Password"
+                  name="password"
+                />
+              </div>
+              <button class="btn btn-primary btn-lg w-100 mb-3"><a class="Login" href="http://localhost:3000/home">Login</a></button>
+            </form>
+            <!-- form -->
+
+            <div class="text-center">
+              <small
+                >Don't have an account?
+                <a href="/signup" class="fw-bold">Sign-up</a></small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Right side -->
+    </div>
+  </body>
+</html>
