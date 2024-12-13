@@ -29,6 +29,9 @@ app.get("/home", Logggedin);
 app.get("/signup", handleUserSignup2);
 app.post("/signup", handleUserSignup);
 app.post("/login", handleUserLogin);
+app.get("/",(req, res) => {
+  res.send("Hello World!");
+})
 
 //middleware or to set router
 
